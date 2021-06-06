@@ -1,5 +1,47 @@
-body {
-    background-color: black;
-    font-size: 21px;
-    color: white;
+@import "variables";
+
+*,
+*::after,
+*::before {
+   box-sizing: inherit;
+   margin: 0;
+   padding: 0;
 }
+img {
+   max-width: 100%;
+   height: auto;
+}
+.visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+}
+html {
+   height: 100%;
+   box-sizing: border-box;
+   font-size: 62.5%;
+}
+
+body {
+   min-height: 100%;
+   margin: 0;
+   background-color: #fff;
+   color: $black;
+
+   font-size: 1.4rem;
+   line-height: 1.8rem;
+   font-family: $Arial;
+   font-weight: 400;
+}
+
+@import "blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/promo.scss";
+@import "blocks/btn.scss";

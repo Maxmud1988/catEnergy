@@ -1,0 +1,17 @@
+.btn {
+   text-transform: uppercase;
+   text-decoration: none;
+   text-align: center;
+   color: $white;
+   padding: 10px 5px;
+
+   &--green {
+      background-color: $basic-green;
+      &:hover {
+         background-color: $basic-green-2;
+      }
+      &:active {
+         opacity: 0.3;
+      }
+   }
+}
