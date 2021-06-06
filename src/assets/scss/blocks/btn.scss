@@ -4,6 +4,9 @@
    text-align: center;
    color: $white;
    padding: 10px 5px;
+   @media (min-width: $tablet-width) {
+      padding: 1.4rem 0.5rem;
+   }
 
    &--green {
       background-color: $basic-green;
@@ -13,5 +16,9 @@
       &:active {
          opacity: 0.3;
       }
+   }
+   &--white {
+      background-color: rgb(54, 153, 15);
+      color: #fff;
    }
 }
